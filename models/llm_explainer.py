@@ -2,7 +2,7 @@
 from groq import Groq
 
 # Hardcoded Groq API key (replace with your actual key)
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "Your API Key"
 
 # Initialize client
 client = Groq(api_key=GROQ_API_KEY)
@@ -36,3 +36,4 @@ def generate_explanation(carrier_name, airport_name, target_month, avg_delay, br
     )
 
     return response.choices[0].message.content.strip()
+
